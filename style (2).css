@@ -8,10 +8,12 @@
 div {
   display: flex;
 }
-h3{
+
+h3 {
   color: burlywood;
 }
- .r1{
+
+.r1 {
   padding: 10px;
   width: 350px;
   border: 1px solid black;

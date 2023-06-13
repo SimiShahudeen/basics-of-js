@@ -38,3 +38,12 @@ mobileArray.forEach(function (brand) {
   htmlElements.appendChild(createList)
   console.log(brand);
 })
+
+let techList = ["Computers", "Mobile Phones", "Gaming Consoles", "Smart Home Devices", "Virtual Reality (VR)"];
+let htmlElementTech = document.getElementById('list4')
+techList.forEach(function (brands) {
+  let createTech = document.createElement('li');
+  createTech.innerText = brands
+  htmlElementTech.appendChild(createTech)
+})
+//or
