@@ -23,10 +23,18 @@ for (let iteratePc of pcList) {
   pcHtml.appendChild(createList)
 }
 
-let mobileArray = ["Apple", "Samsung", "Huawei", "Xiaomi", "OnePlus", "Google", "Sony", "LG", "Motorola", "Nokia"];
-let mobileHtml = document.getElementById('list3');
-for (let iterateMobile of mobileArray) {
-  let listCreating = document.createElement('li');
-  listCreating.innerText = iterateMobile
-  mobileHtml.appendChild(listCreating)
-}
+// let mobileArray = ["Apple", "Samsung", "Huawei", "Xiaomi", "OnePlus", "Google", "Sony", "LG", "Motorola", "Nokia"];
+// let mobileHtml = document.getElementById('list3');
+// for (let iterateMobile of mobileArray) {
+//   let listCreating = document.createElement('li');
+//   listCreating.innerText = iterateMobile
+//   mobileHtml.appendChild(listCreating)
+// }
+let mobileArray = ["Apple", "Samsung", "Huawei", "Xiaomi", "OnePlus", "Google", "Sony", "LG"];
+let htmlElements = document.getElementById('list3');
+mobileArray.forEach(function (brand) {
+  let createList = document.createElement('li');
+  createList.innerText = brand
+  htmlElements.appendChild(createList)
+  console.log(brand);
+})
